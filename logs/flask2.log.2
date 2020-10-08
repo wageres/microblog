@@ -1,0 +1,121 @@
+2020-09-29 19:40:23,298 ERROR: Exception on /reset_password/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZXNldF9wYXNzb3dyZCI6NCwiZXhwIjoxNjAxMzk4MjAwLjQwNTgyODd9.Ut3japdFkzVWN2hC7PAcpnD6SMrOdheJJ0oQMttYDGQ [GET] [in c:\python\flask2\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python\flask2\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python\flask2\venv\app\routes.py", line 185, in reset_password
+    return render_template('reset_password.html', form=form)
+  File "c:\python\flask2\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "c:\python\flask2\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\python\flask2\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\python\flask2\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\python\flask2\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "c:\python\flask2\venv\app\templates\reset_password.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "c:\python\flask2\venv\app\templates\base.html", line 35, in top-level template code
+    {% block content%}
+  File "c:\python\flask2\venv\app\templates\reset_password.html", line 8, in block "content"
+    {{ form.password.label }}<br>
+  File "c:\python\flask2\venv\lib\site-packages\jinja2\environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'app.forms.ResetPasswordForm object' has no attribute 'password'
+2020-09-29 19:40:31,500 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:38]
+2020-09-29 19:40:34,431 ERROR: Exception on /reset_password/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZXNldF9wYXNzb3dyZCI6NCwiZXhwIjoxNjAxMzk4MjAwLjQwNTgyODd9.Ut3japdFkzVWN2hC7PAcpnD6SMrOdheJJ0oQMttYDGQ [GET] [in c:\python\flask2\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python\flask2\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python\flask2\venv\app\routes.py", line 185, in reset_password
+    return render_template('reset_password.html', form=form)
+  File "c:\python\flask2\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "c:\python\flask2\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\python\flask2\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\python\flask2\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\python\flask2\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "c:\python\flask2\venv\app\templates\reset_password.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "c:\python\flask2\venv\app\templates\base.html", line 35, in top-level template code
+    {% block content%}
+  File "c:\python\flask2\venv\app\templates\reset_password.html", line 8, in block "content"
+    {{ form.password.label }}<br>
+  File "c:\python\flask2\venv\lib\site-packages\jinja2\environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'app.forms.ResetPasswordForm object' has no attribute 'password'
+2020-09-29 19:42:14,470 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:38]
+2020-09-29 19:42:23,296 ERROR: Exception on /reset_password/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZXNldF9wYXNzb3dyZCI6NCwiZXhwIjoxNjAxMzk4MjAwLjQwNTgyODd9.Ut3japdFkzVWN2hC7PAcpnD6SMrOdheJJ0oQMttYDGQ [GET] [in c:\python\flask2\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python\flask2\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python\flask2\venv\app\routes.py", line 186, in reset_password
+    return render_template('reset_password.html', form=form)
+  File "c:\python\flask2\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "c:\python\flask2\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "c:\python\flask2\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "c:\python\flask2\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "c:\python\flask2\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "c:\python\flask2\venv\app\templates\reset_password.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "c:\python\flask2\venv\app\templates\base.html", line 35, in top-level template code
+    {% block content%}
+  File "c:\python\flask2\venv\app\templates\reset_password.html", line 8, in block "content"
+    {{ form.password.label }}<br>
+  File "c:\python\flask2\venv\lib\site-packages\jinja2\environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'app.forms.ResetPasswordForm object' has no attribute 'password'
+2020-09-29 19:43:01,057 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:38]
+2020-09-29 19:44:05,004 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:38]
+2020-09-29 20:03:12,209 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:41]
+2020-09-29 20:04:13,611 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:41]
+2020-09-29 20:14:41,908 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:43]
+2020-09-29 20:17:47,151 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:43]
+2020-09-29 21:09:50,380 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:47]
+2020-09-29 21:10:46,197 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:47]
+2020-09-29 22:55:57,063 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:53]
+2020-09-29 23:17:31,525 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:53]
+2020-09-29 23:18:40,373 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:53]
+2020-09-29 23:18:52,478 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:53]
+2020-09-29 23:19:45,005 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:53]
+2020-09-30 20:15:33,536 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:53]

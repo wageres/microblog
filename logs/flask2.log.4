@@ -1,0 +1,136 @@
+2020-09-27 20:38:07,675 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:34]
+2020-09-27 20:38:25,732 ERROR: Exception on /edit_profile [GET] [in c:\python\flask2\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python\flask2\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python\flask2\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "c:\python\flask2\venv\app\routes.py", line 91, in edit_profile
+    form = EditProfileForm(current_user.username)
+  File "c:\python\flask2\venv\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "c:\python\flask2\venv\app\forms.py", line 39, in __init__
+    self.original_username = original_username
+NameError: name 'original_username' is not defined
+2020-09-27 20:38:48,916 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:34]
+2020-09-27 21:49:41,777 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:34]
+2020-09-27 21:50:44,156 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:34]
+2020-09-27 21:51:11,218 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:34]
+2020-09-28 20:33:59,240 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:34]
+2020-09-28 20:39:05,727 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:34]
+2020-09-28 20:56:39,585 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:34]
+2020-09-28 20:57:15,464 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:34]
+2020-09-28 20:57:21,020 ERROR: Exception on / [GET] [in c:\python\flask2\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python\flask2\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python\flask2\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "c:\python\flask2\venv\app\routes.py", line 29, in index
+    return render_template('index.html', title='Home page', posts=posts, form=form)
+UnboundLocalError: local variable 'posts' referenced before assignment
+2020-09-28 20:57:49,207 ERROR: Exception on / [GET] [in c:\python\flask2\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python\flask2\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python\flask2\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "c:\python\flask2\venv\app\routes.py", line 29, in index
+    return render_template('index.html', title='Home page', posts=posts, form=form)
+UnboundLocalError: local variable 'posts' referenced before assignment
+2020-09-28 20:58:37,789 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:34]
+2020-09-28 21:22:16,078 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:34]
+2020-09-28 21:23:04,559 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:34]
+2020-09-29 19:25:34,048 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:38]
+2020-09-29 19:26:41,985 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:38]
+2020-09-29 19:26:56,136 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:38]
+2020-09-29 19:29:25,419 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:38]
+2020-09-29 19:30:59,950 ERROR: Exception on /reset_password_request [POST] [in c:\python\flask2\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python\flask2\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python\flask2\venv\app\routes.py", line 166, in reset_password_request
+    send_password_reset_email(user)
+  File "c:\python\flask2\venv\app\email.py", line 16, in send_password_reset_email
+    sender=app.config['ADMINS'][0],
+NameError: name 'app' is not defined
+2020-09-29 19:32:45,309 ERROR: Exception on /reset_password_request [POST] [in c:\python\flask2\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python\flask2\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python\flask2\venv\app\routes.py", line 166, in reset_password_request
+    send_password_reset_email(user)
+  File "c:\python\flask2\venv\app\email.py", line 16, in send_password_reset_email
+    sender=app.config['ADMINS'][0],
+NameError: name 'app' is not defined
+2020-09-29 19:32:53,795 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:38]
+2020-09-29 19:32:56,979 ERROR: Exception on /reset_password_request [POST] [in c:\python\flask2\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python\flask2\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python\flask2\venv\app\routes.py", line 166, in reset_password_request
+    send_password_reset_email(user)
+  File "c:\python\flask2\venv\app\email.py", line 17, in send_password_reset_email
+    recipients=[user.mail],
+AttributeError: 'User' object has no attribute 'mail'
+2020-09-29 19:34:05,151 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:38]

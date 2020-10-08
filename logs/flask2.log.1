@@ -1,0 +1,138 @@
+2020-09-30 20:15:43,808 ERROR: Exception on / [GET] [in c:\python\flask2\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python\flask2\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python\flask2\venv\lib\site-packages\flask_login\utils.py", line 271, in decorated_view
+    return current_app.login_manager.unauthorized()
+  File "c:\python\flask2\venv\lib\site-packages\flask_login\login_manager.py", line 174, in unauthorized
+    redirect_url = make_login_url(login_view, next_url=request.url)
+  File "c:\python\flask2\venv\lib\site-packages\flask_login\utils.py", line 120, in login_url
+    base = expand_login_view(login_view)
+  File "c:\python\flask2\venv\lib\site-packages\flask_login\utils.py", line 97, in expand_login_view
+    return url_for(login_view)
+  File "c:\python\flask2\venv\lib\site-packages\flask\helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "c:\python\flask2\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\python\flask2\venv\lib\site-packages\flask\helpers.py", line 357, in url_for
+    rv = url_adapter.build(
+  File "c:\python\flask2\venv\lib\site-packages\werkzeug\routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'login'. Did you mean 'auth.login' instead?
+2020-09-30 20:15:44,250 ERROR: Exception on / [GET] [in c:\python\flask2\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python\flask2\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python\flask2\venv\lib\site-packages\flask_login\utils.py", line 271, in decorated_view
+    return current_app.login_manager.unauthorized()
+  File "c:\python\flask2\venv\lib\site-packages\flask_login\login_manager.py", line 174, in unauthorized
+    redirect_url = make_login_url(login_view, next_url=request.url)
+  File "c:\python\flask2\venv\lib\site-packages\flask_login\utils.py", line 120, in login_url
+    base = expand_login_view(login_view)
+  File "c:\python\flask2\venv\lib\site-packages\flask_login\utils.py", line 97, in expand_login_view
+    return url_for(login_view)
+  File "c:\python\flask2\venv\lib\site-packages\flask\helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "c:\python\flask2\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\python\flask2\venv\lib\site-packages\flask\helpers.py", line 357, in url_for
+    rv = url_adapter.build(
+  File "c:\python\flask2\venv\lib\site-packages\werkzeug\routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'login'. Did you mean 'auth.login' instead?
+2020-09-30 20:36:14,773 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:53]
+2020-09-30 20:37:51,775 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:53]
+2020-09-30 20:37:55,886 ERROR: Exception on / [GET] [in c:\python\flask2\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python\flask2\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python\flask2\venv\lib\site-packages\flask_login\utils.py", line 271, in decorated_view
+    return current_app.login_manager.unauthorized()
+  File "c:\python\flask2\venv\lib\site-packages\flask_login\login_manager.py", line 174, in unauthorized
+    redirect_url = make_login_url(login_view, next_url=request.url)
+  File "c:\python\flask2\venv\lib\site-packages\flask_login\utils.py", line 120, in login_url
+    base = expand_login_view(login_view)
+  File "c:\python\flask2\venv\lib\site-packages\flask_login\utils.py", line 97, in expand_login_view
+    return url_for(login_view)
+  File "c:\python\flask2\venv\lib\site-packages\flask\helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "c:\python\flask2\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\python\flask2\venv\lib\site-packages\flask\helpers.py", line 357, in url_for
+    rv = url_adapter.build(
+  File "c:\python\flask2\venv\lib\site-packages\werkzeug\routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'login'. Did you mean 'auth.login' instead?
+2020-09-30 20:39:14,248 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:53]
+2020-09-30 20:43:53,405 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:53]
+2020-09-30 20:44:26,246 ERROR: Exception on /index [GET] [in c:\python\flask2\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\python\flask2\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\python\flask2\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\python\flask2\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "c:\python\flask2\venv\app\main\routes.py", line 34, in index
+    page, app.config['POSTS_PER_PAGE'], False)
+NameError: name 'app' is not defined
+2020-09-30 20:47:01,340 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:53]
+2020-09-30 21:58:34,328 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:74]
+2020-09-30 22:03:11,701 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:74]
+2020-09-30 22:05:02,121 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:74]
+2020-09-30 22:05:59,258 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:74]
+2020-10-04 00:23:45,518 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:74]
+2020-10-04 00:25:07,549 INFO: Microblog startup [in c:\python\flask2\venv\app\__init__.py:74]
+2020-10-04 21:34:25,933 INFO: Microblog startup [in C:\Python\flask2\venv\app\__init__.py:76]
+2020-10-04 21:45:26,447 INFO: Microblog startup [in C:\Python\flask2\venv\app\__init__.py:76]
+2020-10-04 22:39:41,253 INFO: Microblog startup [in C:\Python\flask2\venv\app\__init__.py:76]
+2020-10-04 22:44:41,498 INFO: Microblog startup [in C:\Python\flask2\venv\app\__init__.py:76]
+2020-10-04 22:49:22,366 INFO: Microblog startup [in C:\Python\flask2\venv\app\__init__.py:76]
+2020-10-07 16:22:07,937 INFO: Microblog startup [in C:\Python\flask2\venv\app\__init__.py:76]
+2020-10-07 16:33:43,346 INFO: Microblog startup [in C:\Python\flask2\venv\app\__init__.py:76]
+2020-10-07 16:33:43,346 INFO: Microblog startup [in C:\Python\flask2\venv\app\__init__.py:76]
+2020-10-07 17:35:08,352 INFO: Microblog startup [in C:\Python\flask2\venv\app\__init__.py:76]
