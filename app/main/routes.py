@@ -131,8 +131,9 @@ def search():
         if page > 1 else None)
 	return render_template('search.html', title='Поиск', posts=posts,
                            next_url=next_url, prev_url=prev_url)
-
+"""
 @bp.route('user/<username>/popup')
 @login_required
 def user_popup():
 	pass
+"""
